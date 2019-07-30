@@ -31,13 +31,12 @@
     background-color:#f1f1f1;
     padding: 50px 0;
     ul {
-      padding:0;
       margin:0;
       list-style:none;
     }
     li {
       display:inline-block;
-      padding: 0 10px;
+      padding: 5px 10px;
     }
 
     a {

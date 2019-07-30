@@ -1,4 +1,5 @@
 const config = require('./contentful.json');
+import colors from "vuetify/es5/util/colors";
 
 module.exports = {
   /*
@@ -15,11 +16,15 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
 
+  /*
+  ** Contentful
+  */
   env: {
     CTF_SPACE_ID: config.CTF_SPACE_ID,
     CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN,

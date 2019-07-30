@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div class="container__content">
-  <v-btn>Button</v-btn>
+  <v-btn color="grey darken-1">Button</v-btn>
     </div>
   </section>
 </template>
