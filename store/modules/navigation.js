@@ -14,8 +14,8 @@ export const mutations = {
 export const actions = {
   getPageItems({commit}) {
     contentfulClient.getEntries({
-      'content_type': 'frontpage',
-      order: '-sys.createdAt'
+      'content_type': 'page',
+      order: 'sys.createdAt'
     }).then((page) => {
       if(page) {
         let navItems = page.items;

@@ -1,8 +1,8 @@
 <template>
   <div class="page-component">
     <hr />
-    <h1>{{page.fields.heading}}</h1>
-    <img :src="page.fields.image.fields.file.url" :alt="page.fields.heading" v-if="page.fields.image" />
+    <h1>{{page.fields.title}}</h1>
+    <!-- <img :src="page.fields.image.fields.file.url" :alt="page.fields.heading" v-if="page.fields.image" /> -->
     <p>
       {{page.fields.content}}
     </p>
@@ -17,7 +17,7 @@
     name: 'index',
     asyncData ({ env, params }) {
       return contentfulClient.getEntries({
-        'content_type': 'frontpage',
+        'content_type': 'page',
         'fields.slug': params.id
       }).then(page => {
         return {

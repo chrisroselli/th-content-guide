@@ -3,7 +3,7 @@
     <nav>
       <ul role="menu">
         <li v-for="(navItem, index) in navItems" :key="index">
-          <nuxt-link :to="'/' + navItem.fields.slug.trim()" role="menuitem">{{navItem.fields.navTitle}}</nuxt-link>
+          <nuxt-link :to="'/' + navItem.fields.slug.trim()" role="menuitem">{{navItem.fields.title}}</nuxt-link>
         </li>
       </ul>
     </nav>
