@@ -25,7 +25,9 @@ module.exports = {
     CTF_CDA_ACCESS_TOKEN: config.CTF_CDA_ACCESS_TOKEN,
     CTF_ENVIRONMENT: config.CTF_ENVIRONMENT
   },
-
+  devModules: [
+    '@nuxtjs/vuetify'
+  ],
   /*
   ** Build configuration
   */

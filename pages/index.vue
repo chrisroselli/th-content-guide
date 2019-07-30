@@ -1,8 +1,7 @@
 <template>
   <section class="container">
     <div class="container__content">
-      <h1>Please select a page you wish to view</h1>
-      <p>This is a website for demo purposes of using Nuxt & Contentful together</p>
+  <v-btn>Button</v-btn>
     </div>
   </section>
 </template>
