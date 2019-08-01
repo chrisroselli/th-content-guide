@@ -1,47 +1,39 @@
 <template>
-  <section class="container">
-    <div class="container__content">
-  <v-btn color="grey darken-1">Button</v-btn>
-    </div>
-  </section>
+  <v-container text-center>
+    <v-layout>
+      <v-flex xs12>
+      <Logo logo-prime-color="#48403e" logo-second-color="#589240" />
+      <p class="headline mt-10">Welcome to the Treehouse Content Guide</p>
+      <p class="body-1"> Here you will find blah blah blah.</p>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
-  import Navigation from '../components/Navigation';
+import Logo from "../components/Logo";
 
-  import {createClient} from '../plugins/contentful';
-  const contentfulClient = createClient();
+import { createClient } from "../plugins/contentful";
+const contentfulClient = createClient();
 
-  export default {
-    components: {
-      Navigation
-    },
-    /*asyncData ({env}) {
-      return Promise.all([
-        // fetch all blog posts sorted by creation date
-        contentfulClient.getEntries({
-          'content_type': 'frontpage',
-          order: '-sys.createdAt'
-        })
-      ]).then(([pages]) => {
-        // return data that should be available
-        // in the template
-        return {
-          pages: pages.items
-        }
-      }).catch(console.error)
-    }*/
+export default {
+  components: {
+    Logo
   }
+};
 </script>
 
 <style scoped lang="scss">
-  .container {
-    padding: 50px;
-    max-width:1280px;
-    margin: 0 auto;
-  }
-  .container__content {
-    padding: 50px 0;
-    text-align:center;
-  }
+.container {
+  padding: 50px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.container__content {
+  padding: 50px 0;
+  text-align: center;
+}
+#treehouse-logo {
+    width:300px;
+}
 </style>

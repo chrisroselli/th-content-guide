@@ -13,7 +13,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: 'assets/favicon.ico' }
     ]
   },
 
@@ -36,6 +36,14 @@ module.exports = {
   /*
   ** Build configuration
   */
+ modules: [
+  '@nuxtjs/markdownit'
+],
+markdownit: {
+  preset: 'default',
+  linkify: true,
+  breaks: true
+},
   build: {
     /*
     ** Run ESLint on save

@@ -1,9 +1,8 @@
 <template>
   <div class="page-component">
-    <hr />
     <h1>{{page.fields.title}}</h1>
     <!-- <img :src="page.fields.image.fields.file.url" :alt="page.fields.heading" v-if="page.fields.image" /> -->
-    <p>
+    <p lang="md">
       {{page.fields.content}}
     </p>
   </div>

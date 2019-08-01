@@ -28,20 +28,21 @@
 
 <style lang="scss" scoped>
   .navigation {
-    background-color:#f1f1f1;
     padding: 50px 0;
     ul {
       margin:0;
       list-style:none;
     }
     li {
-      display:inline-block;
       padding: 5px 10px;
     }
 
     a {
       color:#333;
       text-decoration: none;
+    }
+    a:hover {
+      color: #73aa4a;
     }
 
   }

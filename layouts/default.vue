@@ -7,7 +7,9 @@
 
       <v-app-bar app clipped-left color="#73aa4a">
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-        <v-toolbar-title>Treehouse Content Guide</v-toolbar-title>
+        <v-flex pt-3 pl-1>
+          <nuxt-link to="/"><Logo logo-prime-color="#fff" logo-second-color="#fff" /></nuxt-link>
+        </v-flex>
       </v-app-bar>
 
       <v-content>
@@ -20,6 +22,7 @@
            <v-flex
         text-center
         xs12
+        class="white--text caption"
       >
        &copy; {{ new Date().getFullYear() }} - Treehouse Internet Group
       </v-flex>
@@ -31,15 +34,26 @@
 
 <script>
 import Navigation from "../components/Navigation";
+import Logo from "../components/Logo";
 
 export default {
   data: () => ({
     drawer: null
   }),
   components: {
-    Navigation
+    Navigation,
+    Logo
   }
 };
 </script>
+<style scoped>
+.v-btn--outlined .v-btn__content .v-icon, .v-btn--round .v-btn__content .v-icon {
+    color: #fff;
+}
+#treehouse-logo {
+    width:150px;
+}
+</style>
+
 
 
