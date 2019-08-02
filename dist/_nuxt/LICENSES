@@ -41,6 +41,8 @@
  * Released under the MIT License.
  */
 
+/*! https://mths.be/punycode v1.4.1 by @mathias */
+
 /**
  * @copyright 2017 Alex Regan
  * @license MIT

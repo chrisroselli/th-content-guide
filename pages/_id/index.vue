@@ -1,9 +1,9 @@
 <template>
   <div class="page-component">
     <h1>{{page.fields.title}}</h1>
+    <hr/>
     <!-- <img :src="page.fields.image.fields.file.url" :alt="page.fields.heading" v-if="page.fields.image" /> -->
-    <p lang="md">
-      {{page.fields.content}}
+    <p v-html="$md.render(page.fields.content)">
     </p>
   </div>
 </template>
@@ -31,6 +31,9 @@
   hr {
     margin:20px 0;
   }
+  .v-application code {
+    padding: 20px 20px 0 20px;
+  }
   .page-component {
     padding: 50px;
     max-width:1280px;
@@ -39,4 +42,4 @@
       margin: 50px 0;
     }
   }
-</style>
+</style> 

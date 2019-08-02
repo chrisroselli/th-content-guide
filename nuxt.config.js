@@ -36,14 +36,12 @@ module.exports = {
   /*
   ** Build configuration
   */
- modules: [
-  '@nuxtjs/markdownit'
-],
-markdownit: {
-  preset: 'default',
-  linkify: true,
-  breaks: true
-},
+  modules: [
+    '@nuxtjs/markdownit'
+  ],
+  markdownit: {
+    injected: true
+  },
   build: {
     /*
     ** Run ESLint on save

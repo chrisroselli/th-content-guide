@@ -18,6 +18,7 @@
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
+    "@nuxtjs/markdownit-loader": "^1.1.1",
     "@nuxtjs/vuetify": "^1.0.2",
     "babel-eslint": "^10.0.1",
     "eslint": "^4.19.1",
