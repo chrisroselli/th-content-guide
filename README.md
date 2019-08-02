@@ -1,2 +1,2 @@
-# Treehoue Content Guide
+# Treehouse Content Guide
 ### A guide for the Treehouse Content team.
