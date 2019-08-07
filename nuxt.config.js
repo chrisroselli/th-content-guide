@@ -16,6 +16,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  css: [{ src: '~/node_modules/highlight.js/styles/atom-one-dark.css', lang: 'css' }],
 
   /*
   ** Customize the progress bar color
@@ -40,7 +41,10 @@ module.exports = {
     '@nuxtjs/markdownit'
   ],
   markdownit: {
-    injected: true
+    injected: true,
+    use: [
+      'markdown-it-highlightjs'
+    ]
   },
   build: {
     /*

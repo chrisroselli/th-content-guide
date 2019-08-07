@@ -3,8 +3,7 @@
     <h1>{{page.fields.title}}</h1>
     <hr/>
     <!-- <img :src="page.fields.image.fields.file.url" :alt="page.fields.heading" v-if="page.fields.image" /> -->
-    <p v-html="$md.render(page.fields.content)">
-    </p>
+    <p v-html="$md.render(page.fields.content)"></p>
   </div>
 </template>
 
@@ -27,12 +26,20 @@
   }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
   hr {
     margin:20px 0;
   }
-  .v-application code {
-    padding: 20px 20px 0 20px;
+  .v-application {
+    code {
+      padding: 20px 20px 0 20px;
+      background-color: #282c34;
+      color: #abb2bf;
+      margin: 0px 0 20px 0;
+    }
+    code:before {
+      content: "";
+    }
   }
   .page-component {
     padding: 50px;

@@ -9,6 +9,7 @@
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <v-flex pt-3 pl-1>
           <nuxt-link to="/"><Logo logo-prime-color="#fff" logo-second-color="#fff" /></nuxt-link>
+          <span>Content Guide</span>
         </v-flex>
       </v-app-bar>
 
@@ -52,6 +53,16 @@ export default {
 }
 #treehouse-logo {
     width:150px;
+}
+.v-toolbar__content span {
+    bottom: 15px;
+    position: relative;
+    left: 10px;
+    font-size: 18px;
+    color: #f1f1f1;
+}
+.v-btn:not(.v-btn--text):not(.v-btn--outlined):focus:before {
+    opacity: 0;
 }
 </style>
 
