@@ -2,7 +2,7 @@
   <div class="navigation">
     <nav>
       <ul role="menu">
-        <li><nuxt-link to="/">Home</nuxt-link></li>
+        <li><nuxt-link to="/">Welcome</nuxt-link></li>
         <li v-for="(navItem, index) in navItems" :key="index">
           <nuxt-link :to="'/' + navItem.fields.slug.trim()" role="menuitem">
           {{navItem.fields.title}}</nuxt-link>
