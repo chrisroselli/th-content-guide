@@ -17,7 +17,7 @@
     "axios": "^0.19.0",
     "contentful": "^7.6.0",
     "markdown-it-highlightjs": "^3.0.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.15.8"
   },
   "devDependencies": {
     "@nuxtjs/markdownit-loader": "^1.1.1",
